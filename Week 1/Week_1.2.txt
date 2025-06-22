@@ -1,0 +1,12 @@
+1. Compiled Lang. -> First compile then run. Doesn't compile if there is some error. Ex: C++, Java, golang.
+
+2. Interpreted Lang. -> Goes line by line. Can run partially if error comes later. Ex: Python, Js
+
+3. JS is a single thread language, so it can use one of the core at a time. This is why it is considered bad for scalable systems.
+   There is a way to make it run for your machine.
+
+4. Use performance.now() whenever you want precise performance measurement, like:
+
+    Timing how long a function takes
+    Measuring animation or rendering delays
+    Debugging async delay differences (setTimeout, requestAnimationFrame, etc.)
