@@ -9,5 +9,18 @@ There is no automated test for this one, this is more for you to understand time
 */
 
 function calculateTime(n) {
-    return 0.01;
+    let start = performance.now(); 
+    let sum = 0;
+    for (let i = 1; i <= n; i++) {
+        sum += i;
+    }
+    let end = performance.now();
+    let ans = (end - start) / 1000;
+    return ans;
+
 }
+
+console.log("Time taken is " + calculateTime(100) + " seconds");
+console.log("Time taken is " + calculateTime(100000) + " seconds");
+console.log("Time taken is " + calculateTime(1000000000) + " seconds");
+console.log("Time taken is " + calculateTime(10000000000) + " seconds"); 
